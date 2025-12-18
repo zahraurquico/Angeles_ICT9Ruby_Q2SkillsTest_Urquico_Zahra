@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OBMC Contact Us Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"; rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+ <link href="styles.css" rel="stylesheet">
+
+<style>
+    body{
+  background-image: url("OBMCBG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 8%;
+    }
+
+.demo-box {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.header{
+    font-size: 45px;
+}
+
+.hours {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 28px;
+}
+
+.contactform {
+     margin-top: -2px;
+      max-width: 450px;
+}
+
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark navbar bg-dark"> 
+        <div class="container-fluid">
+            <a class="navbar-brand"href="#"><img class="rounded-circle" src="obmc.jpg" alt="logo" height="50px" width="50px"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" target="_self">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html" target="_self">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="enrollnow.html" target="_self">ENROLL NOW</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html" target="_self">CONTACT US</a>
+                </li>
+            </ul>
+
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container-sm demo-box">
+  <strong class="header">HOME</strong>
+  <p>
+    Welcome to the O.B. Montessori Center in the Philippines! We are a progressive pre-k to 12 co-educational school, offering a viable alternative to international schools. At OBMC, we blend tradition and innovation to prepare a child for life.  Our mission is to transform our students into self-developing and productive individuals who can succeed, direct, and influence the future of an ever-changing world. Explore our programs and discover the vibrant community that makes OBMC a unique place for a child to grow and develop.
+  </p>
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="text-center mb-4 hours">School Office Hours</h2>
+
+            <table class="table table-bordered text-center table-striped">
+                <thead class="table table-dark">
+                    <tr>
+                        <th>Day</th>
+                        <th>Office Hours</th>
+                        <th>Department</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>8:00 AM – 4:00 PM</td>
+                        <td>Registrar's Office</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>8:00 AM – 4:00 PM</td>
+                        <td>Accounting Office</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>8:00 AM – 4:00 PM</td>
+                        <td>Guidance Office</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>8:00 AM – 4:00 PM</td>
+                        <td>Principal's Office</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>8:00 AM – 3:00 PM</td>
+                        <td>Admin Office</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+<div class="container-sm demo-box contactform" style="max-width: 450px;">
+    <h3 class="header text-center mb-3" style="font-size: 32px;">Contact Us</h3>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Your Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Your Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+        </div>
+
+        <div class="mb-3">
+            <label for="subject" class="form-label">Subject:</label>
+            <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+        </div>
+
+        <div class="mb-3">
+            <label for="message" class="form-label">Message:</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message" name="message"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-dark w-100">Send Message</button>
+    </form>
+</div>
+</body>
+</html>
